@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Range Parsing</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="app">
+        <div class="main">
+            <div class="input-container" id="main-input-container">
+                <div class="placeholder">Enter comma separated values of numbers or ranges.</div>
+                <input type="text" class="input" id="input">
+                <div class="input-message" id="main-input-message"></div>
+            </div>
+
+            <div class="display">
+                <div class="display-numbers">
+                    <div class="label">Duplicate Numbers: </div>
+                    <div class="numbers" id="duplicate-numbers"></div>
+                </div>
+                <div class="display-numbers">
+                    <div class="label">Unique Numbers: </div>
+                    <div class="numbers" id="unique-numbers"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <button class="button" id="settings-trigger">Settings</button>
+            <div class="view settings hidden" id="settings">
+                <div class="input-container active" id="main-input-container">
+                    <div class="placeholder">Given Array:- Enter comma separated values of numbers.</div>
+                    <input type="text" class="input" id="stored">
+                    <div class="input-message" id="stored-input-message">.</div>
+                </div>
+                <br />
+                <div class="input-container active" id="main-input-container">
+                    <div class="placeholder">Range Thresold</div>
+                    <input type="number" class="input" id="range-threshold">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/main.js"></script>
+</body>
+</html>
